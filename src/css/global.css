@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+    --container-width: 1120px;
+    --container-padding: 32px;
+}
+
+@theme {
+    --width-container: calc(var(--container-width) + (var(--container-padding) * 2));
+    --padding-container: var(--container-padding);
+    --padding-container-left: calc(100% - (var(--container-width) + (var(--container-padding) * 2)));
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+}
